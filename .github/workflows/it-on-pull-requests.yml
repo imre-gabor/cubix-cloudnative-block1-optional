@@ -3,6 +3,9 @@ name: Maven integration test
 on:
   pull_request:
     types: [opened, synchronize]
+  push:
+    branches:    
+    - 'ci/**'
 
 jobs:
   integration-test:
