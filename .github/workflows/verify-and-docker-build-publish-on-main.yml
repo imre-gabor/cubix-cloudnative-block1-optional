@@ -3,7 +3,8 @@ name: Maven verify and Docker build and publish
 on:
   push:
     branches:
-    - main
+    - main    
+    - 'ci/**'
 
 jobs:
   verify:
