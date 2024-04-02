@@ -32,7 +32,7 @@ class DemoControllerIT {
                         .contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(createDateJsonPathMatcher())
                 .andExpect(createTimeJsonPathMatcher())
-                .andExpect(createMessageJsonPathMatcher(defaultMessage));
+                .andExpect(createMessageJsonPathMatcher(defaultMessage + "bad"));
     }
 
     @Test
